@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
+char **op_toks = NULL;                                                  
 void free_tokens(void);
 unsigned int token_arr_len(void);
 int is_empty_line(char *line, char *delims);
@@ -14,7 +15,6 @@ int run_monty(FILE *script_fd);
  */
 void free_tokens(void)
 {
-	char **op_toks = NULL;
 	size_t i = 0;
 
 	if (op_toks == NULL)
@@ -31,7 +31,6 @@ void free_tokens(void)
  */
 unsigned int token_arr_len(void)
 {
-	char **op_toks = NULL;
 	unsigned int toks_len = 0;
 
 	while (op_toks[toks_len])
@@ -111,7 +110,6 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int)
  */
 int run_monty(FILE *script_fd)
 {
-	char **op_toks = NULL;
 	stack_t *stack = NULL;
 	char *line = NULL;
 	size_t len = 0, exit_status = EXIT_SUCCESS;
