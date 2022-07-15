@@ -3,7 +3,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-char **op_toks = NULL;                                                  
 void free_tokens(void);
 unsigned int token_arr_len(void);
 int is_empty_line(char *line, char *delims);
