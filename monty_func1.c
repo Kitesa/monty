@@ -13,7 +13,6 @@ void monty_swap(stack_t **stack, unsigned int line_number);
  */
 void monty_push(stack_t **stack, unsigned int line_number)
 {
-	char **op_toks = NULL;
 	stack_t *tmp, *new;
 	int i;
 
