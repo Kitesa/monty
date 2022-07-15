@@ -1,1 +1,1 @@
-readme text for monty queue and stack project
+readme text for stack and queue
