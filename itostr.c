@@ -80,6 +80,7 @@ void fill_numbase_buff(unsigned int num, unsigned int base,
 {
 	int rem, i = buff_size - 1;
 	buff[buff_size] = '\0';
+
 	while (i >= 0)
 	{
 		rem = num % base;
