@@ -6,6 +6,7 @@
  */
 void set_op_tok_error(int error_code)
 {
+	char **op_toks = NULL;
 	int toks_len = 0, i = 0;
 	char *exit_str = NULL;
 	char **new_toks = NULL;
